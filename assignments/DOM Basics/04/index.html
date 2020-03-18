@@ -13,4 +13,21 @@
       <li>Hometown: <span id="hometown"></span></li>
     </ul>
   </body>
+  <script>
+    document.body.style.fontFamily="Arial,sans-serif";
+    
+    let a= document.querySelector('ul').children;
+    a[0].innerHTML="Apoorv";
+    a[1].innerHTML="Programming";
+    a[2].innerHTML="Etawah";
+
+    document.querySelectorAll('li').forEach(b=>b.classList.add('listitem'));
+
+    document.querySelectorAll('.listitem').forEach(c=>c.style.color='red')
+
+    let image=document.createElement('img');
+    image.src='https://static01.nyt.com/images/2019/10/29/world/29climber1/29climber1-articleLarge.jpg?quality=75&auto=webp&disable=upscale';
+    document.body.append(image);
+
+  </script>
 </html>
