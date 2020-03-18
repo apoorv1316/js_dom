@@ -1,8 +1,21 @@
 var quotes;
 
 // Write your code here
+let quote=document.getElementById('quote');
+let author=document.getElementById('author');
 
+document.body.onkeyup = function(e) {
+    if(e.keyCode ==  32){
+        getQuote();
+    }
+}
 
+function getQuote(){
+    let num= Math.floor(Math.random()* quotes.length);
+    quote.innerHTML=quotes[num].quoteText ;
+    author.innerHTML=quotes[num].quoteAuthor;
+
+}
 
 quotes = [
     {
